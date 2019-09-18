@@ -10,6 +10,7 @@ setup(
     url='https://github.com/blaircraft/SQLAlchemyDatabase3',
     packages=find_packages(),
     include_package_data=True,
+    py_modules=['sqlalchemydatabase3']
     install_requires=[
         'SQLAlchemy',
     ],
