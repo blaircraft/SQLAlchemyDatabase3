@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='sqlalchemydatabase3',
-    version='1.1',
+    version='1.1.1',
     description='Abstraction classes for SQLAlchemy connections using Python 3.',
     author='Blair Craft',
     author_email='blair@blaircraft.net',
