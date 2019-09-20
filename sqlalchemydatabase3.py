@@ -36,6 +36,16 @@ class Database(object):
         except ArgumentError as error:
             print('Problem connecting to the database: {}'.format(error))
 
+    def execute(self, sql):
+        """
+        Execute a raw SQL statement.
+        :param sql: raw text string representing the SQL statement.
+        :return: A SQLAlchemy result
+        """
+        conn = self.engine.connect()
+        result = conn.execute(sql)
+        return result
+
     def initialize(self, reinitialize=False):
         """
         (Optionally) drop all tables and recreate them in the schema.
